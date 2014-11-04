@@ -17,7 +17,10 @@ class ViewController: UIViewController {
         var age = catsAge.text.toInt()
         age=age!*7
         println(catsAge.text)
-        message.text="Your cat is \(age!) years old"
+        if (age! > 150){
+        message.text = "your cat is dead."
+        }else{
+        message.text="Your cat is \(age!) years old"}
     }
     
     override func viewDidLoad() {
